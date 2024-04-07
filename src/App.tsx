@@ -1,12 +1,16 @@
 import React from 'react';
-import HomePage from './components/Home/HomePage';
-// import './App.css'
+import Home from './pages/home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AboutUs from './pages/about-us';
 
 const App: React.FC = () => {
   return (
-    <div id="App">
-      <HomePage />
-    </div>
+    <Router>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="about-us" element={<AboutUs />} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -8,7 +8,7 @@ const OurServices = () => {
         <div className="text-primary font-medium text-xl">OUR SERVICES</div>
         <div className="text-5xl font-bold ">
           Experience The Power Of
-          <span className="text-primary">Innovation.</span>
+          <span className="text-primary"> Innovation.</span>
         </div>
         <div className="w-24 border-solid border-2 border-white" />
         <div className="font-light text-xl">
@@ -16,9 +16,9 @@ const OurServices = () => {
           transformative impact of our solutions firsthand. Let&apos;s pioneer
           new horizons together. Discover the power of innovation with us.
         </div>
-        <div className="w-44 h-12 font-normal text-lg border-solid border-2 border-primary flex items-center justify-center ">
+        <button className="w-44 h-12 font-normal text-lg border-solid border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-black">
           VIEW ALL
-        </div>
+        </button>
       </div>
       <div className="grid grid-cols-2">
         {ourServices.map((service) => (

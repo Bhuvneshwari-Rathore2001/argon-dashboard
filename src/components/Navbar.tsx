@@ -1,33 +1,33 @@
-import { PATH_DASHBOARD } from '../routes';
 import Logo from '../assets/Logo';
 import SearchIcon from '../assets/SearchIcon';
 import { Link } from 'react-router-dom';
+import { PATH_AGENCY } from '../routes';
 
 const navbarOptions = [
   {
     id: 1,
     name: 'Home',
-    link: PATH_DASHBOARD.root,
+    link: PATH_AGENCY.root,
   },
   {
     id: 2,
     name: 'About Us',
-    link: PATH_DASHBOARD.aboutUs,
+    link: PATH_AGENCY.aboutUs,
   },
   {
     id: 3,
     name: 'Services',
-    link: PATH_DASHBOARD.services,
+    link: PATH_AGENCY.services,
   },
   {
     id: 4,
     name: 'Portfolio',
-    link: PATH_DASHBOARD.portfolio,
+    link: PATH_AGENCY.portfolio,
   },
   {
     id: 5,
     name: 'Contact Us',
-    link: PATH_DASHBOARD.contactUs,
+    link: PATH_AGENCY.contactUs,
   },
 ];
 
@@ -38,7 +38,11 @@ const Navbar = () => {
         <Logo />
         <div className="flex p-3 gap-4 text-xl items-center">
           {navbarOptions.map((option) => (
-            <Link className="py-2 px-4" to={option.link} key={option.id}>
+            <Link
+              className="py-2 px-4 hover:text-primary"
+              to={option.link}
+              key={option.id}
+            >
               {option.name}
             </Link>
           ))}

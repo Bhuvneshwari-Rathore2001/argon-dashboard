@@ -18,17 +18,18 @@ const AboutUs = () => {
             we Love Creating
           </div>
           <div className="font-light text-xl ">
-            Lorem ipsumNeque porro quisquam est qui do lorem ipsum quia dolor
-            sit amet, Neque porro elit NeDque porro Lorem ipsum Neque porro
-            Neque porro
+            We&apos;re more than just designers – we&apos;re dreamers,
+            innovators, and problem-solvers. Our mission is simple: to transform
+            your vision into reality through the power of creativity.
             <br />
             <br />
-            Neque porro quisquam est qui do lorem ipsum quia dolor sit amet,
-            Lorem ipsum Neque quis ipsum
+            We turn ideas into impactful designs. With precision and flair, we
+            breathe life into your vision. Let&apos;s create something
+            extraordinary together
           </div>
-          <div className="w-44 h-12 font-normal text-lg border-solid border-2 border-primary flex items-center justify-center">
+          <button className="w-44 h-12 font-normal text-lg border-solid border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-black">
             READ MORE
-          </div>
+          </button>
         </div>
       </div>
     </div>

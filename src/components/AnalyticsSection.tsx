@@ -1,3 +1,6 @@
+import AwardWinningIcon from '../assets/AwardWinningIcon';
+import HappyCustomersIcon from '../assets/HappyCustomersIcon';
+import ProjectDoneIcon from '../assets/ProjectDoneIcon';
 import TeamMemberIcon from '../assets/TeamMemberIcon';
 import AnalyticCard from './AnalyticCard';
 
@@ -8,22 +11,22 @@ const AnalyticsSection = () => {
         <AnalyticCard
           name="Team Members"
           icon={<TeamMemberIcon />}
-          percent="50+"
+          percent="3+"
         />
         <AnalyticCard
           name="Project Done"
-          icon={<TeamMemberIcon />}
-          percent="200+"
+          icon={<ProjectDoneIcon />}
+          percent="6+"
         />
         <AnalyticCard
           name="Happy Customers"
-          icon={<TeamMemberIcon />}
-          percent="500+"
+          icon={<HappyCustomersIcon />}
+          percent="10+"
         />
         <AnalyticCard
           name="Award Winning"
-          icon={<TeamMemberIcon />}
-          percent="75+"
+          icon={<AwardWinningIcon />}
+          percent="3+"
         />
       </div>
     </div>

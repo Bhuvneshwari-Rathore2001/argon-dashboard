@@ -1,8 +1,23 @@
+import { motion } from 'framer-motion';
+
 const Banner = () => {
+  const motionOptions = {
+    initial: 'hidden',
+    animate: 'visible',
+  };
+
   return (
     <div className="bg-bannerGradient">
       <div className="flex items-center pt-44 max-w-7xl m-auto">
-        <div className="flex flex-col gap-11">
+        <motion.div
+          {...motionOptions}
+          variants={{
+            hidden: { x: -50, opacity: 0 },
+            visible: { x: 0, opacity: 1 },
+          }}
+          transition={{ ease: 'easeOut', duration: 0.8 }}
+          className="flex flex-col gap-11"
+        >
           <div className="text-primary font-medium text-xl ">WELCOME TO BR</div>
           <div className="text-7xl font-bold w-[819px]">
             WE ARE <span className="text-primary">CREATIVE</span> DESIGN AGENCY
@@ -18,11 +33,17 @@ const Banner = () => {
           <button className="w-44 h-12 font-normal text-lg border-solid border-2 hover:text-black hover:bg-primary hover:border-none border-primary flex items-center justify-center">
             GET IN TOUCH
           </button>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          {...motionOptions}
+          variants={{
+            hidden: { x: 50, opacity: 0 },
+            visible: { x: 0, opacity: 1 },
+          }}
+          transition={{ ease: 'easeOut', duration: 0.8 }}
           style={{ backgroundImage: "url('./assets/WomenBigJewel.svg')" }}
           className="bg-cover bg-no-repeat bg-center h-[787px] w-full"
-        ></div>
+        ></motion.div>
       </div>
     </div>
   );

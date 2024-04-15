@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo';
 import SearchIcon from '../assets/SearchIcon';
-import { Link } from 'react-router-dom';
 import { PATH_AGENCY } from '../routes';
 
 const navbarOptions = [
@@ -33,7 +33,7 @@ const navbarOptions = [
 
 const Navbar = () => {
   return (
-    <div className="w-full py-4 bg-navbarGradient">
+    <div className="w-full sticky top-0 z-50 bg-black text-white font-poppins py-4 bg-navbarGradient">
       <div className="flex items-center justify-between  max-w-7xl mx-auto">
         <Logo />
         <div className="flex p-3 gap-4 text-xl items-center">

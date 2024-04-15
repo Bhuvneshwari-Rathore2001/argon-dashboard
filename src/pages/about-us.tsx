@@ -1,12 +1,5 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-
 const AboutUs = () => {
-  return (
-    <div className="bg-black text-white font-poppins">
-      <Navbar />
-    </div>
-  );
+  return <div className="bg-black text-white font-poppins">About us</div>;
 };
 
 export default AboutUs;

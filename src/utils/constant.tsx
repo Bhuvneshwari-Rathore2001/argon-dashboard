@@ -1,4 +1,5 @@
 import GraphicDesignIcon from '../assets/GraphicDesignIcon';
+import UiUxDesignIcon from '../assets/UiUxDesignIcon';
 // import UiUxDesignIcon from '../assets/UiUxDesignIcon';
 import VideoMarketingIcon from '../assets/VideoMarketingIcon';
 import WebsiteDesignIcon from '../assets/WebsiteDesignIcon';
@@ -20,7 +21,7 @@ export const ourServices = [
   },
   {
     id: 3,
-    // icon: <UiUxDesignIcon />,
+    icon: <UiUxDesignIcon />,
     title: 'UI/UX DESIGN',
     desc: 'Enhance engagement through intuitive design.',
     className: 'bg-uiUxDesign',

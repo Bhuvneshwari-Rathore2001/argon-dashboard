@@ -1,4 +1,6 @@
-const AddressIcon = ({ width = 33, height = 45 }) => {
+import { IconProp } from '../types/common';
+
+const AddressIcon = ({ width = 33, height = 45 }: IconProp) => {
   return (
     <svg
       width={width}

@@ -1,4 +1,6 @@
-const MailIcon = ({ width = 39, height = 31 }) => {
+import { IconProp } from '../types/common';
+
+const MailIcon = ({ width = 39, height = 31 }: IconProp) => {
   return (
     <svg
       width={width}

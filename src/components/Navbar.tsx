@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo';
+import MenuIcon from '../assets/MenuIcon';
 import SearchIcon from '../assets/SearchIcon';
 import { PATH_AGENCY } from '../routes';
 
@@ -34,21 +35,23 @@ const navbarOptions = [
 const Navbar = () => {
   return (
     <div className="w-full sticky top-0 z-50 bg-black text-white font-poppins py-4 bg-navbarGradient">
-      <div className="flex items-center justify-between  max-w-7xl mx-auto">
-        <Logo />
-        <div className="flex p-3 gap-4 text-xl items-center">
+      <div className="flex items-center max-sm:mx-4 justify-between max-w-7xl mx-auto">
+        <Logo className="w-[40%] sm:w-[20%] lg:w-fit" />
+        <div className="flex p-3 gap-1 md:gap-2 max-sm:hidden lg:gap-3 sm:text-sm md:text-base lg:text-xl items-center">
           {navbarOptions.map((option) => (
             <Link
-              className="py-2 px-4 hover:text-primary"
+              className="py-2 px-2 lg:px-4 text-center hover:text-primary"
               to={option.link}
               key={option.id}
             >
               {option.name}
             </Link>
           ))}
-          <SearchIcon />
+          <SearchIcon className="max-lg:w-16" />
         </div>
+        <MenuIcon className="sm:hidden" />
       </div>
+      {/* Mobile Menu */}
     </div>
   );
 };

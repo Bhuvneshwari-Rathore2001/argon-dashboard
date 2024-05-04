@@ -1,4 +1,6 @@
-const TickIcon = ({ height = 21, width = 21 }) => {
+import { IconProp } from '../types/common';
+
+const TickIcon = ({ height = 21, width = 21 }: IconProp) => {
   return (
     <svg
       width={width}

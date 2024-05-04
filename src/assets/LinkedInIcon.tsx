@@ -1,4 +1,6 @@
-const LinkedInIcon = ({ width = 19, height = 18 }) => {
+import { IconProp } from '../types/common';
+
+const LinkedInIcon = ({ width = 19, height = 18 }: IconProp) => {
   return (
     <svg
       width={width}

@@ -1,8 +1,10 @@
-const GraphicDesignIcon = () => {
+import { IconProp } from '../types/common';
+
+const GraphicDesignIcon = ({ width = 96, height = 100 }: IconProp) => {
   return (
     <svg
-      width="96"
-      height="100"
+      width={width}
+      height={height}
       viewBox="0 0 96 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

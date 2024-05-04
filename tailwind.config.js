@@ -11,9 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         navbarGradient:
-          'linear-gradient(270deg, rgba(109, 149, 252, 0.3) 8.85%, rgba(109, 149, 252, 0) 50%);',
-        bannerGradient:
-          'linear-gradient(268.78deg, rgba(109, 149, 252, 0.67) -53.1%, rgba(109, 149, 252, 0) 30.41%)',
+          'linear-gradient(270deg, rgba(109, 149, 252, 0.3) 8.85%, rgba(109, 149, 252, 0) 50%)',
         aboutUsGradient:
           'linear-gradient(90deg, rgba(109, 149, 252, 0.26) 6.51%, rgba(109, 149, 252, 0) 57.56%)',
         videoMarketing:
@@ -30,6 +28,8 @@ module.exports = {
           'linear-gradient(175.64deg, rgba(17, 24, 42, 0.7) 19.67%, rgba(17, 24, 42, 0) 121.51%)',
         getInTouchGradient:
           'linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 61.55%)',
+        inputGradient:
+          'linear-gradient(179.96deg, #12192B 0.03%, rgba(18, 25, 43, 0) 109.04%)',
       },
     },
   },

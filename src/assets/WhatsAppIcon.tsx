@@ -1,4 +1,6 @@
-const WhatsAppIcon = ({ width = 20, height = 20 }) => {
+import { IconProp } from '../types/common';
+
+const WhatsAppIcon = ({ width = 20, height = 20 }: IconProp) => {
   return (
     <svg
       width={width}

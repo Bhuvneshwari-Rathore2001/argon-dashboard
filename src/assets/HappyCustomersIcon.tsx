@@ -1,4 +1,6 @@
-const HappyCustomersIcon = ({ width = 95, height = 92 }) => {
+import { IconProp } from '../types/common';
+
+const HappyCustomersIcon = ({ width = 95, height = 92 }: IconProp) => {
   return (
     <svg
       width={width}

@@ -3,7 +3,7 @@ import WhatsAppIcon from '../assets/WhatsAppIcon';
 
 const Footer = () => {
   return (
-    <div className="mt-52 flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <div className="font-semibold text-6xl text-primary pb-5">BR</div>
       <div className="font-normal text-sm pb-1">CREATIVE AGENCY</div>
       <div className="border-2 border-white w-20 "></div>

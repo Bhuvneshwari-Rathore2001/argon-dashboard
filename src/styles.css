@@ -3,3 +3,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bannerGradient{
+    background: linear-gradient(268.78deg, rgba(109, 149, 252, 0.67) -53.1%, rgba(109, 149, 252, 0) 30.41%), url('/public/assets/WomenBigJewel.png') 400px no-repeat
+}
+
+
+@media screen and (max-width: 1024px) {
+    .bannerGradient{
+        background: linear-gradient(268.78deg, rgba(109, 149, 252, 0.67) -53.1%, rgba(109, 149, 252, 0) 30.41%), url('/public/assets/WomenBigJewel.png') 220px no-repeat !important
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .bannerGradient{
+        background: linear-gradient(268.78deg, rgba(109, 149, 252, 0.67) -53.1%, rgba(109, 149, 252, 0) 30.41%), url('/public/assets/WomenBigJewel.png') 50px no-repeat !important
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bannerGradient {
+        background: linear-gradient(268.78deg, rgba(109, 149, 252, 0.67) -53.1%, rgba(109, 149, 252, 0) 30.41%), url('/public/assets/WomenBigJewel.png') -250px no-repeat !important
+    }
+}

@@ -1,4 +1,6 @@
-const UiUxDesignIcon = ({ height = 95, width = 96 }) => {
+import { IconProp } from '../types/common';
+
+const UiUxDesignIcon = ({ height = 95, width = 96 }: IconProp) => {
   return (
     <svg
       width={width}

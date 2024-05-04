@@ -1,8 +1,10 @@
-const WebsiteDesignIcon = () => {
+import { IconProp } from '../types/common';
+
+const WebsiteDesignIcon = ({ width = 90, height = 94 }: IconProp) => {
   return (
     <svg
-      width="90"
-      height="94"
+      width={width}
+      height={height}
       viewBox="0 0 90 94"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

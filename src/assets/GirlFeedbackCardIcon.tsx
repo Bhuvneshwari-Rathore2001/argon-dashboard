@@ -1,4 +1,6 @@
-const GirlFeedbackCardIcon = ({ width = 100, height = 100 }) => {
+import { IconProp } from '../types/common';
+
+const GirlFeedbackCardIcon = ({ width = 100, height = 100 }: IconProp) => {
   return (
     <svg
       width={width}

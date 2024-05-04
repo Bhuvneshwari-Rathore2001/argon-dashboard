@@ -7,8 +7,8 @@ const Banner = () => {
   };
 
   return (
-    <div className="bg-bannerGradient">
-      <div className="flex items-center pt-44 max-w-7xl m-auto">
+    <div className="flex h-screen">
+      <div className="flex items-center z-10 max-w-7xl max-2xl:px-6 m-auto">
         <motion.div
           {...motionOptions}
           variants={{
@@ -16,14 +16,16 @@ const Banner = () => {
             visible: { x: 0, opacity: 1 },
           }}
           transition={{ ease: 'easeOut', duration: 0.8 }}
-          className="flex flex-col gap-11"
+          className="flex flex-col gap-3 md:gap-5 lg:gap-11 w-4/5"
         >
-          <div className="text-primary font-medium text-xl ">WELCOME TO BR</div>
-          <div className="text-7xl font-bold w-[819px]">
+          <div className="text-primary font-medium text-base lg:text-xl ">
+            WELCOME TO BR
+          </div>
+          <div className="text-4xl md:text-5xl lg:text-7xl font-bold ">
             WE ARE <span className="text-primary">CREATIVE</span> DESIGN AGENCY
           </div>
           <div className="w-36 border-2 border-primary"></div>
-          <div className="font-light text-xl w-[697px]">
+          <div className="font-light text-sm md:text-base lg:text-xl">
             We believe that design is more than just aesthetics – it&apos;s
             about crafting meaningful experiences that resonate with your
             audience and drive results. As a premier design agency, we
@@ -34,17 +36,14 @@ const Banner = () => {
             GET IN TOUCH
           </button>
         </motion.div>
-        <motion.div
-          {...motionOptions}
-          variants={{
-            hidden: { x: 50, opacity: 0 },
-            visible: { x: 0, opacity: 1 },
-          }}
-          transition={{ ease: 'easeOut', duration: 0.8 }}
-          style={{ backgroundImage: "url('./assets/WomenBigJewel.svg')" }}
-          className="bg-cover bg-no-repeat bg-center h-[787px] w-full"
-        ></motion.div>
       </div>
+      <div
+        // style={{
+        //   background:
+        //     "linear-gradient(268.78deg, rgba(109, 149, 252, 0.67) -53.1%, rgba(109, 149, 252, 0) 30.41%), url('./assets/WomenBigJewel.png') -160px",
+        // }}
+        className="absolute bannerGradient right-0 bg-cover h-full w-full"
+      ></div>
     </div>
   );
 };

@@ -1,4 +1,6 @@
-const CallIcon = ({ width = 35, height = 34 }) => {
+import { IconProp } from '../types/common';
+
+const CallIcon = ({ width = 35, height = 34 }: IconProp) => {
   return (
     <svg
       width={width}

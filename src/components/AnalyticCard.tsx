@@ -10,8 +10,12 @@ const AnalyticCard = ({ name, icon, percent }: IAnalyticCard) => {
   return (
     <div className="flex flex-col items-center">
       {icon}
-      <div className="font-bold text-6xl">{percent}</div>
-      <div className="font-normal text-center text-xl text-primary">{name}</div>
+      <div className="font-bold lg:text-6xl md:text-5xl text-4xl">
+        {percent}
+      </div>
+      <div className="lg:text-xl text-base font-normal text-center text-primary">
+        {name}
+      </div>
     </div>
   );
 };

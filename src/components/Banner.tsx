@@ -32,7 +32,7 @@ const Banner = () => {
             specialize in delivering creative solutions that elevate brands and
             leave a lasting impact.
           </div>
-          <button className="w-44 h-12 font-normal text-lg border-solid border-2 hover:text-black hover:bg-primary hover:border-none border-primary flex items-center justify-center">
+          <button className="lg:w-1/3 md:w-2/5 sm:w-1/2 max-sm:w-3/5 h-12 font-normal text-lg border-solid border-2 hover:text-black hover:bg-primary hover:border-none border-primary flex items-center justify-center">
             GET IN TOUCH
           </button>
         </motion.div>

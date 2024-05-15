@@ -1,6 +1,6 @@
 import { IconProp } from '../types/common';
 
-const Robot = ({ width = 863, height = 806 }: IconProp) => {
+const Robot = ({ width = 863, height = 806, ...props }: IconProp) => {
   return (
     <svg
       width={width}
@@ -9,6 +9,7 @@ const Robot = ({ width = 863, height = 806 }: IconProp) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
     >
       <rect width="863" height="806" fill="url(#pattern0_130_14)" />
       <defs>

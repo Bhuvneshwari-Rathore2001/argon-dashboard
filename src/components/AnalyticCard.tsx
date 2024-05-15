@@ -8,7 +8,7 @@ interface IAnalyticCard {
 
 const AnalyticCard = ({ name, icon, percent }: IAnalyticCard) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col justify-end items-center">
       {icon}
       <div className="font-bold lg:text-6xl md:text-5xl text-4xl">
         {percent}

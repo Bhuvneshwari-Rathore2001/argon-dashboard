@@ -30,6 +30,10 @@ module.exports = {
           'linear-gradient(223.47deg, rgba(109, 149, 252, 0.24) 3.19%, rgba(21, 21, 21, 0) 61.55%)',
         inputGradient:
           'linear-gradient(179.96deg, #12192B 0.03%, rgba(18, 25, 43, 0) 109.04%)',
+        mobileMenu:
+          'linear-gradient(90deg, rgba(26,31,55,1) 50%, rgba(6,11,38,1) 74%)',
+        mobileMenu2:
+          'linear-gradient(90deg, rgba(12,14,28,1) 40%, rgba(9,13,35,1) 74%)',
       },
     },
   },

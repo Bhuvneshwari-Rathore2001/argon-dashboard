@@ -8,7 +8,7 @@ const Feedback = () => {
         alt="girl"
         className="bg-cover bg-no-repeat bg-center max-md:hidden"
       />
-      <div className="flex flex-col justify-center items-center col-span-2 max-md:mt-5">
+      <div className="flex min-w-[50%] flex-col justify-center items-center col-span-2">
         <div className="font-bold lg:text-4xl text-3xl text-center">
           WHAT <span className="text-primary">OUR</span> CLIENTS SAY?
         </div>

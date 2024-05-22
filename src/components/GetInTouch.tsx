@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import AddressIcon from '../assets/AddressIcon';
 import CallIcon from '../assets/CallIcon';
@@ -100,9 +101,14 @@ const GetInTouch = () => {
                   <div className="font-bold md:text-lg max-md:text-sm">
                     Call Us
                   </div>
-                  <div className="font-normal md:text-base max-md:text-xs text-primary">
+
+                  <Link
+                    target="_blank"
+                    to={`tel:${7737191811}`}
+                    className="font-normal md:text-base max-md:text-xs text-primary"
+                  >
                     (+91) 77 371 918 11
-                  </div>
+                  </Link>
                 </div>
               </div>
               <div className="flex lg:gap-7 max-lg:gap-5 items-center md:w-full">
@@ -111,9 +117,13 @@ const GetInTouch = () => {
                   <div className="font-bold md:text-lg max-md:text-sm">
                     Mail Us
                   </div>
-                  <div className="font-normal md:text-base max-md:text-xs text-primary">
+                  <Link
+                    to="mailto:bhuvneshwarirathore4@gmail.com"
+                    target="_blank"
+                    className="font-normal md:text-base max-md:text-xs text-primary"
+                  >
                     bhuvneshwarirathore4@gmail.com
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>

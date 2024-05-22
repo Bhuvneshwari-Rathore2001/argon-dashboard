@@ -6,7 +6,7 @@ const CloseIcon = ({ height = 35, width = 35, ...props }: IconProp) => {
       height={height}
       viewBox="0 -960 960 960"
       width={width}
-      fill="#CE0202"
+      fill="white"
       {...props}
     >
       <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />

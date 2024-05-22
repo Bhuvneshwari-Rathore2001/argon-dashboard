@@ -6,11 +6,9 @@ const Portfolio = () => {
     autoplay: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
     speed: 500,
-    dots: true,
+    dots: false,
     arrow: false,
-
     responsive: [
       {
         breakpoint: 640,
@@ -47,11 +45,22 @@ const Portfolio = () => {
           {...settings}
           className="[&_.slick-slide>div]:mx-4 [&_.slick-arrow]:!hidden [&_.slick-slide>div]:h-full"
         >
-          <img src="/assets/Dashboard.png" alt="" />
-          <img src="/assets/Billing.png" alt="" />
-          <img src="/assets/Profile.png" alt="" />
-          <img src="/assets/Tables.png" alt="" />
-          <img src="/assets/SignIn.png" alt="" />
+          <img
+            src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/a3603bbb-ebb8-49b8-897a-0582eafb5331"
+            alt=""
+          />
+          <img
+            src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/96ae627c-7dc6-49d4-ba3b-ab0f3a01dbde"
+            alt=""
+          />
+          <img
+            src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/2e78d803-312b-4798-8a3f-8d375f65ba39"
+            alt=""
+          />
+          <img
+            src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/ec41d640-aee5-4037-8e14-214eeed22756"
+            alt=""
+          />
         </Slider>
       </div>
     </Element>

@@ -3,10 +3,9 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 import Logo from '../assets/Logo';
 import MenuIcon from '../assets/MenuIcon';
-import SearchIcon from '../assets/SearchIcon';
 import CloseIcon from './CloseIcon';
 
-const navbarOptions = [
+export const navbarOptions = [
   {
     id: 1,
     name: 'Home',
@@ -55,7 +54,6 @@ const Navbar = () => {
               {option.name}
             </Link>
           ))}
-          <SearchIcon className="max-lg:w-16" />
         </div>
         <MenuIcon
           className="sm:hidden"

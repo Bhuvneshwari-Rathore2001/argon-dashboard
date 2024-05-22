@@ -4,7 +4,7 @@ const Feedback = () => {
   return (
     <div className="flex justify-center max-w-7xl max-2xl:px-6 m-auto md:gap-1 overflow-hidden">
       <img
-        src="/assets/FeedbackGirl.svg "
+        src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/2e2b3de4-b62f-49ea-b607-7f9f08e8e670"
         alt="girl"
         className="bg-cover bg-no-repeat bg-center max-md:hidden"
       />
@@ -22,7 +22,7 @@ const Feedback = () => {
         </button>
       </div>
       <img
-        src="/assets/FeedbackRobot.svg"
+        src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/0ebe8050-c872-43af-a742-1eeedecbacfc"
         alt="robot"
         className="bg-cover bg-no-repeat bg-center max-md:hidden"
       />

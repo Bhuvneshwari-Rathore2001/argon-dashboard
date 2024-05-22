@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Element } from 'react-scroll';
 import Slider from 'react-slick';
 
@@ -45,21 +47,25 @@ const Portfolio = () => {
           {...settings}
           className="[&_.slick-slide>div]:mx-4 [&_.slick-arrow]:!hidden [&_.slick-slide>div]:h-full"
         >
-          <img
+          <LazyLoadImage
             src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/a3603bbb-ebb8-49b8-897a-0582eafb5331"
             alt=""
+            effect="blur"
           />
-          <img
+          <LazyLoadImage
             src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/96ae627c-7dc6-49d4-ba3b-ab0f3a01dbde"
             alt=""
+            effect="blur"
           />
-          <img
+          <LazyLoadImage
             src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/2e78d803-312b-4798-8a3f-8d375f65ba39"
             alt=""
+            effect="blur"
           />
-          <img
+          <LazyLoadImage
             src="https://github.com/dark-venom26/Dashboard-Assignment/assets/92418471/ec41d640-aee5-4037-8e14-214eeed22756"
             alt=""
+            effect="blur"
           />
         </Slider>
       </div>

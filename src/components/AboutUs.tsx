@@ -1,38 +1,14 @@
-import { motion } from 'framer-motion';
-import { Element } from 'react-scroll';
 import Robot from '../assets/Robot';
 
 const AboutUs = () => {
-  const motionOptions = {
-    initial: 'hidden',
-    whileInView: 'visible',
-    viewport: { once: true },
-  };
-
   return (
-    <Element name="about-us">
+    <section>
       <div className="bg-aboutUsGradient">
         <div className="flex flex-col md:flex-row max-w-7xl mx-auto max-2xl:px-6 max-md:pb-14">
-          <motion.div
-            {...motionOptions}
-            variants={{
-              hidden: { x: -50, opacity: 0 },
-              visible: { x: 0, opacity: 1 },
-            }}
-            transition={{ ease: 'easeOut', duration: 2 }}
-            className="flex justify-center"
-          >
+          <div className="flex justify-center">
             <Robot className="md:max-w-[60vw] max-md:h-[400px] max-sm:h-80 max-w-[60%] " />
-          </motion.div>
-          <motion.div
-            {...motionOptions}
-            variants={{
-              hidden: { x: 50, opacity: 0 },
-              visible: { x: 0, opacity: 1 },
-            }}
-            transition={{ ease: 'easeOut', duration: 2 }}
-            className="flex flex-col md:gap-6 gap-3 md:py-32 max-md:items-center"
-          >
+          </div>
+          <div className="flex flex-col md:gap-6 gap-3 md:py-32 max-md:items-center">
             <div className="text-primary font-medium lg:text-xl text-base">
               ABOUT US
             </div>
@@ -58,10 +34,10 @@ const AboutUs = () => {
             <button className="w-44 h-12 font-normal lg:text-lg text-base border-solid border-2 border-primary flex items-center justify-center hover:bg-primary hover:text-black">
               READ MORE
             </button>
-          </motion.div>
+          </div>
         </div>
       </div>
-    </Element>
+    </section>
   );
 };
 

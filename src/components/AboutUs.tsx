@@ -1,8 +1,9 @@
+import { Element } from 'react-scroll';
 import Robot from '../assets/Robot';
 
 const AboutUs = () => {
   return (
-    <section>
+    <Element name="about-us">
       <div className="bg-aboutUsGradient">
         <div className="flex flex-col md:flex-row max-w-7xl mx-auto max-2xl:px-6 max-md:pb-14">
           <div className="flex justify-center">
@@ -37,7 +38,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 
